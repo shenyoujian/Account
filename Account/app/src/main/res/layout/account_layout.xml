@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EBEBEB">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/linearLayout1"
+        android:orientation="horizontal"
+        android:background="#444eb9">
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:id="@+id/back"
+            android:src="@drawable/back"
+            android:background="#444eb9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账户"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_vertical"
+            android:background="#444eb9"
+            android:layout_marginLeft="80dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:enabled="false"
+            android:textIsSelectable="false"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="净资产"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="15pt"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/money_sum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="15pt"
+        android:gravity="center"/>
+</LinearLayout>

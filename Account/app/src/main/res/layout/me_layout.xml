@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EBEBEB">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#444eb9"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="#444eb9"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="80dp"
+            android:background="#444eb9"
+            android:enabled="false"
+            android:text="我"
+            android:textColor="#FFFFFF"
+            android:textIsSelectable="false"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记账人"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        >
+
+        <ImageView
+            android:id="@+id/login_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bottom_wo"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <ImageView
+            android:id="@+id/invent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/login_image"
+            android:background="@drawable/jia"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:id="@+id/login_show_username"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="未登陆"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/login_image"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邀请"
+            android:layout_below="@+id/invent"
+            android:layout_toRightOf="@+id/login_show_username"
+            android:layout_marginLeft="40dp"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:id="@+id/changemanage"
+       >
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageButton"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/zhangdan"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="修改个人信息"
+            android:id="@+id/textView"
+            android:layout_gravity="left"
+            android:layout_marginLeft="80dp"
+            android:gravity="center_vertical"
+            android:textSize="19dp"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageButton2"
+            android:layout_gravity="right|bottom"
+            android:background="#FFFFFF"/>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:id="@+id/opinion"
+        android:layout_marginTop="33dp">
+
+
+        <ImageButton
+            android:background="@drawable/naozhong"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="意见反馈"
+
+            android:layout_gravity="left"
+            android:layout_marginLeft="80dp"
+            android:gravity="center_vertical"
+            android:textSize="19dp"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|bottom"
+            android:background="#FFFFFF"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+
+        android:id="@+id/about"
+        android:layout_marginTop="3dp">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="left|center"
+            android:background="@drawable/shu"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="关于记账本"
+
+            android:layout_gravity="left"
+            android:layout_marginLeft="80dp"
+            android:gravity="center_vertical"
+            android:textSize="19dp"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|bottom"
+            android:background="#FFFFFF"/>
+    </FrameLayout>
+</LinearLayout>

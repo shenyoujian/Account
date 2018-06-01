@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="16dp"
+    android:background="#EBEBEB">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/frameLayoutTitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#444eb9"
+        >
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:id="@+id/back"
+            android:src="@drawable/back"
+            android:background="#444eb9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账户"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_vertical"
+            android:background="#444eb9"
+            android:layout_marginLeft="80dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:enabled="false"
+            android:textIsSelectable="false"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:id="@+id/frameLayoutRecorder"
+        android:layout_below="@+id/frameLayoutTitle">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageButton"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/zhangdan"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="账单"
+            android:id="@+id/textView"
+            android:layout_gravity="left"
+            android:layout_marginLeft="80dp"
+            android:gravity="center_vertical"
+            android:textSize="19dp"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageButton2"
+            android:layout_gravity="right|bottom"
+            android:background="#FFFFFF"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:id="@+id/frameLayoutPlan"
+        android:layout_below="@+id/frameLayoutRecorder"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp">
+
+
+        <ImageButton
+            android:background="@drawable/naozhong"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="设置闹钟"
+
+            android:layout_gravity="left"
+            android:layout_marginLeft="80dp"
+            android:gravity="center_vertical"
+            android:textSize="19dp"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+
+            android:layout_gravity="right|bottom"
+            android:background="#FFFFFF"/>
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/frameLayoutPlan"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/frameLayoutStream"
+        android:layout_marginTop="3dp">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="left|center"
+            android:background="@drawable/shu"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="分享"
+
+            android:layout_gravity="left"
+            android:layout_marginLeft="80dp"
+            android:gravity="center_vertical"
+            android:textSize="19dp"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|bottom"
+            android:background="#FFFFFF"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_marginTop="37dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/frameLayoutStream"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/frameLayoutBalance">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bi"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="收支统计"
+
+            android:layout_gravity="left"
+            android:layout_marginLeft="80dp"
+            android:gravity="center_vertical"
+            android:textSize="19dp"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+
+            android:layout_gravity="right|bottom"
+            android:background="#FFFFFF"/>
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/frameLayoutBalance"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/frameLayoutExportdata"
+        android:layout_marginTop="3dp">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/nao"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="导出数据"
+
+            android:layout_gravity="left"
+            android:layout_marginLeft="80dp"
+            android:gravity="center_vertical"
+            android:textSize="19dp"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+
+            android:layout_gravity="right|bottom"
+            android:background="#FFFFFF"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/frameLayoutExportdata"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/frameLayoutSubmitdata">
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ling"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="同步数据"
+
+            android:layout_gravity="left"
+            android:layout_marginLeft="80dp"
+            android:gravity="center_vertical"
+            android:textSize="19dp"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            android:layout_gravity="right|bottom"/>
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/frameLayoutSubmitdata"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="3dp"
+        android:id="@+id/frameLayoutChart">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/chi"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="图表查看"
+
+            android:layout_gravity="left"
+            android:layout_marginLeft="80dp"
+            android:gravity="center_vertical"
+            android:textSize="19dp"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+
+            android:layout_gravity="right|bottom"
+            android:background="#FFFFFF"/>
+
+    </FrameLayout>
+</RelativeLayout>
+

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="#B0E0E6">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--descendantFocusability="beforeDescendants"子控件获取焦点-->
+        <LinearLayout
+            android:id="@+id/bottom_water"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:descendantFocusability="beforeDescendants">
+
+            <ImageButton
+                android:id="@+id/bottom_water_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0000"
+                android:clickable="false"
+                android:src="@drawable/bottom_liushui"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="流水"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_account"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:descendantFocusability="beforeDescendants">
+
+            <ImageButton
+                android:id="@+id/bottom_account_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0000"
+                android:clickable="false"
+                android:src="@drawable/bottom"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="净资产"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_more"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:descendantFocusability="beforeDescendants">
+
+            <ImageButton
+                android:id="@+id/bottom_more_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0000"
+                android:clickable="false"
+                android:src="@drawable/bottom_gengduo"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更多"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:descendantFocusability="beforeDescendants">
+
+            <ImageButton
+                android:id="@+id/bottom_me_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0000"
+                android:clickable="false"
+                android:src="@drawable/bottom_wo"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

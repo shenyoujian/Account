@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ljs.account">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity android:name=".WaterActivity" />
+        <activity android:name=".MakeANoteActivity" />
+        <activity android:name=".AccountActivity" />
+        <activity android:name=".Bill_Activity" />
+        <activity android:name=".AlarmActivity" />
+        <activity android:name=".MoreActivity" />
+        <activity android:name=".MeActivity" />
+        <activity android:name=".UpdatePersonalInformation" />
+        <activity android:name=".ChartActivity" />
+        <activity
+            android:name=".Modify_Income_Activity"
+            android:label="@string/title_activity_modify__income_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChangeManage"
+            android:label="@string/title_activity_change_manage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Modify_Expenses_Activity"
+            android:label="@string/title_activity_modify__expenses_"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

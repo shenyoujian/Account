@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/change_username"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/username"
+            android:layout_marginTop="1dp"
+            android:drawablePadding="6sp"
+            android:background="#ffffff"
+            android:hint="请输入您的用户名"
+            android:textColor="#3d3d3d"
+            android:textSize="15sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_marginTop="4dp"
+            android:background="#f2f2f2"></View>
+        <EditText
+            android:id="@+id/change_mail"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/password"
+            android:layout_marginTop="1dp"
+            android:drawablePadding="6sp"
+            android:background="#ffffff"
+            android:hint="请输入您的邮箱账号"
+            android:inputType="textWebEmailAddress"
+            android:textColor="#3d3d3d"
+            android:textSize="15sp"/>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/change_btn"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="修 改"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/button_style"/>
+</LinearLayout>

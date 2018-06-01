@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Account</string>
+    <string name="title_activity_jiyibi_activity">jiyibi_activity</string>
+    <string name="title_activity_modify__income_">Modify_Income_Activity</string>
+    <string name="title_activity_change_manage">ChangeManage</string>
+    <string name="title_activity_modify__expenses_">Modify_Expenses_Activity</string>
+</resources>
